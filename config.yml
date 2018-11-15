@@ -1,0 +1,15 @@
+logging:
+  level: INFO
+  loggers:
+    com.team.jdbi: DEBUG
+template: hello, %s!
+database:
+  driverClass: org.postgresql.Driver
+  user: zippy
+  password: zippy
+  url: jdbc:postgresql://localhost:5432/
+  properties:
+    charSet: UTF-8
+    hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate.hbm2ddl.auto: create-drop
+    hibernate.show.sql: true
